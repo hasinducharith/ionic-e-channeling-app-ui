@@ -1,0 +1,16 @@
+ion-button {
+  --background: none;
+}
+
+.profile-info {
+  padding-top: 30px;
+
+  .profile-img {
+    padding-bottom: 30px;
+    img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }
+  }
+}

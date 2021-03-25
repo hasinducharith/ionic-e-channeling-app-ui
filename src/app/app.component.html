@@ -1,3 +1,41 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/images/profile.jpeg" alt="">
+        <ion-label>
+          <h2>Alex Sam</h2>
+          <p>xxxxxxxxx</p>
+        </ion-label>
+      </div>
+      <!-- <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Add Branch
+        </ion-button>
+      </div> -->
+
+      <ion-list class="menu-items" lines="none">
+        <ion-item class="active" routerLink="/home" routerDirection="forward">
+          <ion-icon name="heart-outline"></ion-icon>Home
+        </ion-item>
+        <ion-item routerLink="/doctors" routerDirection="forward">
+          <ion-icon name="heart-outline"></ion-icon>Find Doctors
+        </ion-item>
+        <ion-item>
+          <ion-icon name="notifications-outline"></ion-icon>Doctor Inform
+        </ion-item>
+        <ion-item>
+          <ion-icon name="bookmark-outline"></ion-icon>Appoinment Details
+        </ion-item>
+        <ion-item routerLink="/profile" routerDirection="forward">
+          <ion-icon name="person-outline"></ion-icon>Profile
+        </ion-item>
+        <ion-item routerLink="/login" routerDirection="back">
+          <ion-icon name="log-out-outline"></ion-icon>Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
